@@ -1,0 +1,17 @@
+.banner {
+  height: 600px;
+  color: white;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+    h1{
+    font-weight: 900;
+    }
+    p{
+      font-weight: lighter;
+      font-family: 'Open Sans', sans-serif;
+    }
+}

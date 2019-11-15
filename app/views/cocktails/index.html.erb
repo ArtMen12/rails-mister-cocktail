@@ -1,10 +1,29 @@
-<h1>All cocktails</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://images.unsplash.com/photo-1470337458703-46ad1756a187?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80);">
+  <div class="container text-center justify-center">
+    <h1>OUR WONDERFUL <br><i class="highlighted highlighted-red">COCKTAILS</i></h1><br>
+    <p><span id="banner-typed-text"></span></p><br><br>
+    <a class="btn btn-light" href="#list">Discover</a>
+  </div>
+</div>
 
-<% @cocktails.each do |cocktail| %>
-  <%= link_to cocktail_path(cocktail) do %>
-    <h2><%= cocktail.name %></h2>
+<h1 id="list" class="highlighted-g highlighted-green">All cocktails</h1>
+
+
+<div class="cards">
+  <% @cocktails.each do |cocktail| %>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=986&q=80)">
+      <%= link_to cocktail_path(cocktail) do %>
+        <h2 id="card-name"><%= cocktail.name %></h2>
+      <% end %>
+    </div>
   <% end %>
-<% end %>
+</div>
 
-<%= link_to "Add a cocktail", new_cocktail_path %>
+<br>
+<br>
+<%= link_to new_cocktail_path do %>
+    <div class="btn btn-dark btn-sm"><h2><%= "Add a cocktail" %></h2></div>
+  <% end %>
+
+
 

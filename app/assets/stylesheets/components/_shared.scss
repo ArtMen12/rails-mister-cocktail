@@ -1,0 +1,39 @@
+.highlighted-white {
+    color: #01070c;
+}
+.highlighted, .highlighted i {
+    font-family: 'Roboto', sans-serif;
+}
+.highlighted {
+    padding: 2px 15px 4px;
+    font-style: normal;
+    border-radius: 3px;
+    background: linear-gradient(rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.5));
+    color: #01070c;
+}
+
+.btn.btn-dark{
+  justify-content: center;
+  text-align: center;
+  margin: 20px 500px 20px 500px;
+  font-size: 1px;
+  border-radius: 5px;
+}
+
+
+.highlighted-green {
+    color: white;
+}
+.highlighted-g, .highlighted-g i {
+    font-family: 'Open-sans', sans-serif;
+    font-weight: bolder;
+}
+.highlighted-g {
+    padding: 2px 15px 4px;
+    margin: 20px 400px 20px 400px;
+    font-style: normal;
+    border-radius: 3px;
+    background: linear-gradient(rgba(29, 221, 136, 0.5),rgba(29, 221, 136, 0.5));
+    color: white;
+    text-align: center;
+}
